@@ -1,0 +1,6 @@
+<div class="container">
+    <button (click)="goBack()" [disabled]="isSameDay(currentDate, minDate)">&lt;</button>
+    <div>{{ fullDate }}</div>
+    <button (click)="goForward()" [disabled]="isSameDay(currentDate, maxDate)" >&gt;</button>
+</div>
+<div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>

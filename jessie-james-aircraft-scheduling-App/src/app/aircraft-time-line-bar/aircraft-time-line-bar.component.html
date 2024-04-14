@@ -1,0 +1,7 @@
+<div class="timeline-header">24hr Time Usage</div>
+<div class="timeline">
+    <span class="timeline-label start-label">00:00</span>
+    <span class="timeline-label middle-label">12:00</span>
+    <span class="timeline-label end-label">24:00</span>
+    <div *ngFor="let segment of timelineSegments"  [class]="segment.type + ' timeline-segment'" [style.width]="getSegmentWidth(segment.duration)"> </div>
+</div>

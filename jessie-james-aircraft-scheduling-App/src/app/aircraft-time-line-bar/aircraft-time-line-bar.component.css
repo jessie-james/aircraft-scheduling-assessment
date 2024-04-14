@@ -1,0 +1,58 @@
+
+.timeline {
+    display: flex;
+    width: 90%;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    border: 2px solid #000;
+    border-radius: 10px; 
+    overflow: hidden; 
+    position: relative;
+}
+
+.timeline-segment {
+    flex-grow: 1;
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.idle {
+    background-color: #ddd; 
+}
+
+.flight {
+    background-color: #8FBC8F; 
+}
+
+.turnaround {
+    background-color: #9370DB; 
+}
+
+.timeline-label {
+    position: absolute; 
+    color: #000;
+    font-size: 14px;
+}
+
+.start-label {
+    left: 0;
+}
+
+.middle-label {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.end-label {
+    right: 0;
+}
+
+.timeline-header {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}

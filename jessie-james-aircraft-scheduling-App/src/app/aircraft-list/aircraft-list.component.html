@@ -1,0 +1,6 @@
+<div class="aircraft-column">
+    <div *ngFor="let aircraft of aircrafts" class="aircraft-card">
+    <h3>{{ aircraft.ident }}</h3>
+    <div>{{ utilization.toFixed(2) }}%</div>
+  </div>
+</div>
